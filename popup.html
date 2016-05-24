@@ -1,0 +1,78 @@
+<html>
+<head>
+  <link rel="stylesheet" href="vendor/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="vendor/jquery1_10_2.js"></script>
+  <script src="popup.js"></script>
+
+</head>
+
+<div class="header">
+<h1><i class="icon ion-waterdrop colored"></i> Water<span class="colored">Me</span></h1>
+<a href="#" data-page="index" class="link"><i class="icon ion-home margin-right"></i>Home</a> &nbsp;-&nbsp; <a href="#" data-page="settings" class="link"><i class="icon ion-gear-b margin-right"></i>Unproductive URLs</a> &nbsp;-&nbsp; <a href="#" data-page="about" class="link"><i class="icon ion-person margin-right"></i>About</a>
+</div>
+
+
+<!-- start page: index -->
+<div class="page" id="page-index">
+<img src="images/main.jpg">
+
+<div class="wrapper">
+<h2>Turn Productivity Mode On?</h2>
+
+<select id="enabled">
+<option value="0" selected="selected">Productivity Mode: OFF</option>
+<option value="1">Productivity Mode: ON</option>
+</select>
+<br><br>
+
+When productivity mode is <b>ON</b> we'll redirect <a href="#">your list of unproductive URL's</a> to the donation pages of organizations that help to <i>reduce the global burden of disease<i>.
+</div><!-- end wrapper -->
+</div>
+<!-- end page: index -->
+
+<!-- start page: settings -->
+<div class="page" id="page-settings" style="display:none;">
+<h2>Unproductive URL's</h2>
+Please enter a comma separated list of websites that you consider "unproductive". When productivity mode is <b>ON</b> we'll redirect <a href="#" data-page="settings" class="link">your list of unproductive URL's</a> to the donation pages of organizations that help to <i>reduce the global burden of disease<i>.
+<br><br>
+<div class="wrapper">
+<textarea placeholder="facebook.com, twitter.com, pinterest.com, vine.co" id="sites"></textarea>
+</div>
+<br>
+Your sites are saved automatically.
+</div>
+<!-- end page: settings -->
+
+<!-- start page: about -->
+<div class="page" id="page-about" style="display:none;">
+<h2>About The Extension</h2>
+This extension aims to reduce the global burden of disease due to poor water quality, sanitation, and insufficient hygiene (EH-24 as identified by the US Department of Health and Human Services). 
+<br><br><br>
+<div class="wrapper">
+
+<table>
+<tr>
+ <td><img src="images/waterorg.png"></td>
+ <td><img src="images/uniceftap.jpg"></td>
+</tr>
+<tr>
+ <td><img src="images/wateraid.png"></td>
+ <td><img src="images/worldvision.jpg"></td>
+</tr>
+</table>
+Built for the <u>Innovating for Enviornmental Health APP Challenge</u>
+</div><!-- end wrapper -->
+
+</div>
+<!-- end page: about -->
+
+
+
+
+
+
+
+</html>
